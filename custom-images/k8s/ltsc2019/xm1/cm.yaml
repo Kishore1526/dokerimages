@@ -29,7 +29,7 @@ spec:
         kubernetes.io/os: windows
       containers:
       - name: sitecore-xm1-cm
-        image: sitecore-xm1-cm
+        image: aks2021.azurecr.io/sitecore-xp0-xm1-cm:latest
         ports:
         - containerPort: 80
         env:
