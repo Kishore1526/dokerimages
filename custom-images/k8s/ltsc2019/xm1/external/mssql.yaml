@@ -38,11 +38,11 @@ spec:
         ports:
         - containerPort: 1433
         env:
-        - name: SA_PASSWORD
+        - name: SITECORE_ADMIN_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: sitecore-database
-              key: sitecore-databasepassword.txt
+              name: sitecore-admin
+              key: sitecore-adminpassword.txt
         - name: ACCEPT_EULA
           value: "Y"
         volumeMounts:
