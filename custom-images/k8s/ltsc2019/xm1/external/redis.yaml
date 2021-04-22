@@ -32,7 +32,7 @@ spec:
         kubernetes.io/os: linux
       containers:
       - name: sitecore-redis
-        image: redis
+        image: aks2021.azurecr.io/sitecore-xp0-redis
         ports:
         - containerPort: 6379
         securityContext:
